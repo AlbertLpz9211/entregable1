@@ -7,7 +7,18 @@ import quotes from "./quotes.json";
 
 function App() {
   //Arreglo de colores
-  const colors = ["#5e62c2", "#c261b9", "#ff6c9b", "#ff9277", "#ffc461"];
+  const colors = [
+    "#5e62c2",
+    "#c261b9",
+    "#ff6c9b",
+    "#ff9277",
+    "#ffc461",
+    "#008f7a",
+    "#008e9b",
+    "#2c73d2",
+    "#ffc75f",
+    "#b39cd0"
+  ];
   //seteando un indice aleatorio para las frases
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const [Index, setIndex] = useState(randomIndex);
@@ -21,12 +32,10 @@ function App() {
     setIndex(randomIndex);
     setIndexC(randomIndexC);
   }
-  document.body.style =`background:${colors[IndexC]}`;
+  document.body.style = `background:${colors[IndexC]}`;
   return (
     <div className="App">
-      
       <div className="card">
-        
         <QuoteBox quote={quotes[Index].quote} colors={colors[IndexC]} />
         <Author author={quotes[Index].author} colors={colors[IndexC]} />
         <Button changeColor={changeColor} colors={colors[IndexC]} />
