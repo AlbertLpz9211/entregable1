@@ -1,11 +1,7 @@
 import React from "react";
 
 const Author = (prop) => {
-  return (
-    <div>
-      <h1>componente Author</h1>
-    </div>
-  );
+    return <p className='author' style={{color:`${prop.colors}`}}>{prop.author}</p>
 };
 
 export default Author;

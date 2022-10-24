@@ -1,14 +1,45 @@
-.card{
-  background-color: blue;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  margin-top: auto;
+* {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.button{
-  background-color: aliceblue;
-  width: 100px;
-  height: 100px;
+.App {
+  text-align: center;
+}
+
+.card {
+  width: fit-content;
+  padding: 30px;
+  box-shadow: 2px 2px 8px rgba(150, 192, 34, 0.2);
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card h1 i {
+  font-size: 25px;
+}
+
+.card img {
   border-radius: 50%;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card ul li i {
+  margin-right: 10px;
+}
+
+.card button {
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  background: greenyellow;
 }
