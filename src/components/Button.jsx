@@ -1,9 +1,15 @@
 import React from "react";
 
-const Button = () => {
+const Button = (prop) => {
   return (
-    <div className="button">
-      <h1>componente boton</h1>
+    <div className="btn-container">
+      <button
+        style={{ color: `${prop.colors}` }}
+        className="button-card"
+        onClick={prop.changeColor}
+      >
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </button>
     </div>
   );
 };

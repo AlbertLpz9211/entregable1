@@ -21,14 +21,15 @@ function App() {
     setIndex(randomIndex);
     setIndexC(randomIndexC);
   }
-
+  document.body.style =`background:${colors[IndexC]}`;
   return (
     <div className="App">
-      {/* <h1>{quotes[0].author}</h1> */}
+      
       <div className="card">
+        
         <QuoteBox quote={quotes[Index].quote} colors={colors[IndexC]} />
-        <Author />
-        <Button />
+        <Author author={quotes[Index].author} colors={colors[IndexC]} />
+        <Button changeColor={changeColor} colors={colors[IndexC]} />
       </div>
     </div>
   );
